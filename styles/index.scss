@@ -9,47 +9,48 @@ body{
 
 .container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 90%;
 }
 
 .first-section{
     display: flex;
     flex-direction: column;
-    margin-top: 60px;sadfasdfdfghdfghdfgh
-    width: 100%;
+    height: fit-content;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 200px;
 
     .brand{
-        text-align: right;
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: -1px;
+        margin-bottom: 120px;
     }
-}
 
-h1{
-    font-size: 88px;
-    font-weight: bold;
-    line-height: 88px;
-    letter-spacing: -1px;
-    max-width: 60%;
-    margin-bottom: 40px;
-}
+    .first-info{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
 
-.description{
-    max-width: 70%;
-    line-height: 34px;
-    font-size: 20px;
-    font-style: normal;
-}
+        h1{
+            font-size: 88px;
+            line-height: 88px;
+            letter-spacing: -1px;
+            width: 70%;
+        }
 
-.brand{
-    font-size: 40px;
-    line-height: 52px;
-}
-
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 5rem;
+        .description{
+            width: 55%;
+            line-height: 34px;
+            font-size: 20px;
+            font-style: normal;
+        } 
+    }
 }
 
 .middle-section{
@@ -151,16 +152,6 @@ button{
 
 footer{
     
-}
-
-.first-section{
-    display: flex;
-    height: fit-content;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 90%;
-    margin-top: 100px;
-    margin-bottom: 20px;
 }
 
 .details{
