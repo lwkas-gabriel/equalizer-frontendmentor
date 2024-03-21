@@ -22,20 +22,14 @@ body{
     align-items: start;
     justify-content: space-evenly;
     width: 90%;
-    margin-top: 100px;
-    margin-bottom: 200px;
-
-    .brand{
-        font-size: 1.5rem;
-        font-weight: bold;
-        letter-spacing: -1px;
-        margin-bottom: 120px;
-    }
+    margin-top: 60px;
 
     .first-info{
         display: flex;
         flex-direction: column;
         gap: 40px;
+        margin-top: 200px;
+        margin-bottom: 200px;
 
         h1{
             font-size: 88px;
@@ -53,6 +47,12 @@ body{
     }
 }
 
+.brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
 .middle-section{
     display: flex;
     justify-content: space-evenly;
@@ -64,6 +64,7 @@ body{
     background-image: url("../src/assets/bg-pattern-2.svg");
     background-position: top 20% center;
     background-repeat: no-repeat;
+    margin-bottom: 200px;
 
     .app-img{
         height: 642px;
@@ -156,23 +157,26 @@ body{
 
 
 footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: fit-content;
+    align-items: center;
+
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
     
-}
+    .social{
+        display: flex;
+        gap: 1rem;
 
-.details{
-    display: flex;
-    flex-direction: column;
+        .icon{
+            cursor: pointer;
+        }
+    }
 }
-
-.social{
-    display: flex;
-    gap: 1rem;
-}
-
-.icon{
-    cursor: pointer;
-}
-
 
 
 @media (max-width: 768px){

@@ -21,19 +21,14 @@ body {
   align-items: start;
   justify-content: space-evenly;
   width: 90%;
-  margin-top: 100px;
-  margin-bottom: 200px;
-}
-.first-section .brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: -1px;
-  margin-bottom: 120px;
+  margin-top: 60px;
 }
 .first-section .first-info {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 .first-section .first-info h1 {
   font-size: 88px;
@@ -48,6 +43,12 @@ body {
   font-style: normal;
 }
 
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
 .middle-section {
   display: flex;
   justify-content: space-evenly;
@@ -59,6 +60,7 @@ body {
   background-image: url("../src/assets/bg-pattern-2.svg");
   background-position: top 20% center;
   background-repeat: no-repeat;
+  margin-bottom: 200px;
 }
 .middle-section .app-img {
   height: 642px;
@@ -137,17 +139,22 @@ body {
   background-color: #FFB864;
 }
 
-.details {
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: fit-content;
+  align-items: center;
+}
+footer .details {
   display: flex;
   flex-direction: column;
 }
-
-.social {
+footer .social {
   display: flex;
   gap: 1rem;
 }
-
-.icon {
+footer .social .icon {
   cursor: pointer;
 }
 
