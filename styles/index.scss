@@ -1,0 +1,298 @@
+body{
+    width: 100%;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-image: url("../src/assets/bg-pattern-1.svg"),
+                      url("../src/assets/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+}
+
+.first-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;sadfasdfdfghdfghdfgh
+    width: 100%;
+
+    .brand{
+        text-align: right;
+    }
+}
+
+h1{
+    font-size: 88px;
+    font-weight: bold;
+    line-height: 88px;
+    letter-spacing: -1px;
+    max-width: 60%;
+    margin-bottom: 40px;
+}
+
+.description{
+    max-width: 70%;
+    line-height: 34px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.brand{
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.middle-section{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding-right: 90px;
+    height: 600px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #000;
+    background-image: url("../src/assets/bg-pattern-2.svg");
+    background-position: top 20% center;
+    background-repeat: no-repeat;
+}
+
+.app-img{
+    height: 642px;
+    width: 312px;
+    margin-bottom: 100px;
+}
+
+.subscription-container{
+    width: 446px;
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FA7453;
+    border-radius: 20px;
+    color: white;
+    padding: 50px;
+    margin-bottom: -100px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 40px;
+    margin-bottom: 46px;
+}
+
+h3{
+    line-height: 52px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.info-description{
+    width: 333px;
+    height: 170px;
+    line-height: 34px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.price{
+    line-height: 52px;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 61px;
+    width: 333px;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    gap: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.apple-btn{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.apple-btn:hover{
+    background-color: #66E2DC;
+}
+
+.android-btn{
+    background-color: white;
+    transition: .5s;
+}
+
+.android-btn:hover{
+    background-color: #FFB864;
+}
+
+
+footer{
+    
+}
+
+.first-section{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    display: flex;
+    gap: 1rem;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    body{
+        background-image: url("../src/assets/bg-main-tablet.png")
+    }
+
+    h1{
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    .description{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 630px){
+    body{
+        background-image: url("../src/assets/bg-main-mobile.png")
+    }
+
+    .first-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .description{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        background-image: url("../src/assets/bg-main-mobile.png")
+    }
+
+    .first-section{
+        margin-bottom: 150px;
+    }
+
+    .first-section .first-info{
+        margin-top: 64px;
+    }
+
+    .first-section .first-info h1{
+        max-width: 90%;
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .first-section .first-info p{
+        max-width: 90%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .middle-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding: 0;
+        margin-bottom: 200px;
+        background-size: 80%;
+    }
+
+    .middle-section .app-img{
+        width: 70%;
+    }
+
+    .middle-section .subscription-container{
+        width: 100%;
+        padding: 5%;
+    }
+
+    .middle-section .subscription-container h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .middle-section .subscription-container .info-description{
+        font-size: 18px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .middle-section .subscription-container button{
+        width: 100%;
+    }
+
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+    }
+
+    footer span {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .brand{
+        font-size: 40px;
+    }
+
+}
