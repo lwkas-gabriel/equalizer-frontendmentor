@@ -58,7 +58,7 @@ body{
     justify-content: space-evenly;
     align-items: flex-end;
     height: 600px;
-    width: 90%;
+    width: 65%;
     border-radius: 10px;
     background-color: #000;
     background-image: url("../src/assets/bg-pattern-2.svg");
@@ -70,6 +70,7 @@ body{
         height: 642px;
         width: 312px;
         margin-bottom: 100px;
+        z-index: 2;
     }
 
     .subscription-container{
@@ -83,6 +84,7 @@ body{
         color: white;
         padding: 50px;
         margin-bottom: -100px;
+        z-index: 0;
 
         .info-container{
             display: flex;
@@ -162,17 +164,31 @@ footer{
     width: 90%;
     height: fit-content;
     align-items: center;
+    margin-bottom: 30px;
 
-    .details{
+    .brand-detail{
         display: flex;
-        flex-direction: column;
+        width: 70%;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .details{
+            display: flex;
+            flex-direction: column;
+        }
     }
-    
+
     .social{
         display: flex;
         gap: 1rem;
-
+        width: 10%;
         .icon{
+            cursor: pointer;
+            transition: 0.7s
+        }
+
+        .icon:hover{
+            fill: #FFB964;
             cursor: pointer;
         }
     }
@@ -181,40 +197,65 @@ footer{
 
 @media (max-width: 768px){
     body{
-        background-image: url("../src/assets/bg-main-tablet.png")
+        background: no-repeat top right url("../src/assets/bg-pattern-1.svg"),
+         url("../src/assets/bg-main-tablet.png");
+         background-size: 30%, cover;
+    }
+    
+    .first-section{
+        .first-info{
+            margin-top: 100px;
+
+            h1{
+                font-size: 64px;
+                line-height: 64px;
+                letter-spacing: -0.73px;
+            }
+    
+            .description{
+                width: 80%;
+                line-height: 28px;
+                font-size: 18px;
+            } 
+        }
+    }
+    
+    .middle-section{
+        .app-img{
+            width: 60%;
+            position: relative;
+            z-index: 2;
+        }
+    
+        .subscription-container{
+            position: absolute;
+            z-index: 10;
+
+            .info-container{
+                height: 546px;
+                width: 399px;
+                .info-description{
+                    line-height: 28px;
+                    font-size: 18px;
+                }
+    
+                .price{
+                    line-height: 52px;
+                    font-size: 65px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    footer{
+        justify-content: center;
+        .brand-detail{
+            align-items: start;
+            flex-direction: column;
+        }
     }
 
-    h1{
-        font-size: 64px;
-        line-height: 64px;
-    }
-
-    .description{
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 630px){
-    body{
-        background-image: url("../src/assets/bg-main-mobile.png")
-    }
-
-    .first-info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
-
-    h1{
-        font-size: 40px;
-        line-height: 48px;
-    }
-
-    .description{
-        font-size: 16px;
-        line-height: 26px;
-    }
 }
 
 @media (max-width: 375px){
@@ -290,5 +331,4 @@ footer{
     .brand{
         font-size: 40px;
     }
-
 }
