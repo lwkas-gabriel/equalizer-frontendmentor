@@ -56,7 +56,7 @@ body {
   align-items: flex-end;
   height: 600px;
   min-width: inherit;
-  width: 65%;
+  width: 90%;
   border-radius: 10px;
   background-color: #000;
   background-image: url("../src/assets/bg-pattern-2.svg");
@@ -68,11 +68,10 @@ body {
   height: 642px;
   width: 312px;
   margin-bottom: 150px;
-  position: relative;
-  top: -50px;
 }
 .middle-section .subscription-container {
   width: 446px;
+  height: 625px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -96,8 +95,8 @@ body {
   font-size: 40px;
 }
 .middle-section .subscription-container .info-container .info-description {
-  width: 333px;
-  height: 170px;
+  width: 100%;
+  height: fit-content;
   line-height: 34px;
   font-size: 20px;
   font-style: normal;
@@ -195,11 +194,8 @@ footer .social .icon:hover {
   }
   .middle-section .app-img {
     width: 60%;
-    position: absolute6;
-  }
-  .middle-section .subscription-container .info-container {
-    height: 546px;
-    width: 399px;
+    margin-right: -10px;
+    position: absolute;
   }
   .middle-section .subscription-container .info-container .info-description {
     line-height: 28px;
@@ -247,16 +243,19 @@ footer .social .icon:hover {
     align-items: center;
     justify-content: center;
     width: 90%;
-    padding: 0;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     background-size: 80%;
   }
   .middle-section .app-img {
-    width: 70%;
+    width: 30%;
+    margin-bottom: 50px;
   }
   .middle-section .subscription-container {
     width: 100%;
-    padding: 5%;
+    padding: 10%;
+  }
+  .middle-section .subscription-container .info-container {
+    width: 100%;
   }
   .middle-section .subscription-container .info-container h3 {
     font-size: 32px;
