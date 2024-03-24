@@ -65,7 +65,7 @@ body{
     background-image: url("../src/assets/bg-pattern-2.svg");
     background-position: top 20% center;
     background-repeat: no-repeat;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     // position: absolute;
     top: 50%;
 
@@ -180,8 +180,8 @@ footer{
 
     .brand-detail{
         display: flex;
-        width: 70%;
-        justify-content: space-evenly;
+        width: 60%;
+        justify-content: space-between;
         align-items: center;
 
         .details{
@@ -372,9 +372,5 @@ footer{
             font-size: 1rem;
             line-height: 1.75rem;
         }
-    }
-
-    .brand{
-        font-size: 2.5rem;
     }
 }
