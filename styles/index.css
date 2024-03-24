@@ -27,20 +27,20 @@ body {
 .first-section .first-info {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
   margin-top: 200px;
   margin-bottom: 200px;
 }
 .first-section .first-info h1 {
-  font-size: 88px;
-  line-height: 88px;
+  font-size: 5.5rem;
+  line-height: 5.5rem;
   letter-spacing: -1px;
   width: 70%;
 }
 .first-section .first-info .description {
   width: 55%;
-  line-height: 34px;
-  font-size: 20px;
+  line-height: 2.125rem;
+  font-size: 1.25rem;
   font-style: normal;
 }
 
@@ -54,7 +54,7 @@ body {
   display: block;
   position: relative;
   min-width: inherit;
-  width: 90%;
+  width: 80%;
   height: 600px;
   border-radius: 10px;
   background-color: #000;
@@ -74,51 +74,52 @@ body {
 }
 .middle-section .subscription-container {
   position: absolute;
-  top: 0%;
+  top: 10%;
   margin-left: 45%;
   margin-top: 100px;
-  margin-right: 50px;
-  min-width: 40%;
-  max-width: 446px;
-  height: fit-content;
+  margin-right: 3.125rem;
+  width: fit-content;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: #FA7453;
   border-radius: 20px;
   color: white;
-  padding: 30px;
+  padding: 1.5rem;
   margin-bottom: -100px;
 }
 .middle-section .subscription-container .info-container {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  gap: 40px;
-  margin-bottom: 46px;
+  justify-content: space-evenly;
+  width: fit-content;
+  gap: 1rem;
 }
 .middle-section .subscription-container .info-container h3 {
-  width: 100%;
-  line-height: 52px;
+  width: fit-content;
+  line-height: 3.25rem;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .middle-section .subscription-container .info-container .info-description {
-  width: 100%;
+  width: fit-content;
   height: fit-content;
-  line-height: 34px;
-  font-size: 20px;
+  line-height: 1.9rem;
+  font-size: 1.25rem;
   font-style: normal;
 }
 .middle-section .subscription-container .info-container .price {
-  line-height: 52px;
-  font-size: 65px;
+  line-height: 3.25rem;
+  font-size: 4.063rem;
   font-weight: bold;
 }
 .middle-section .subscription-container .btn-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
+  width: 100%;
 }
 .middle-section .subscription-container .btn-container button {
   display: flex;
@@ -131,9 +132,9 @@ body {
   border: none;
   gap: 7px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 0.9rem;
   font-weight: bold;
-  line-height: 32px;
+  line-height: 2;
 }
 .middle-section .subscription-container .btn-container .apple-btn {
   background-color: black;
@@ -172,7 +173,7 @@ footer .brand-detail .details {
 footer .social {
   display: flex;
   gap: 1rem;
-  width: 10%;
+  width: fit-content;
 }
 footer .social .icon {
   cursor: pointer;
@@ -185,21 +186,21 @@ footer .social .icon:hover {
 
 @media (max-width: 768px) {
   body {
-    background: no-repeat top right url("../src/assets/bg-pattern-1.svg"), url("../src/assets/bg-main-tablet.png");
-    background-size: 30%, cover;
+    background: no-repeat top right url("../src/assets/bg-pattern-1.svg"), no-repeat url("../src/assets/bg-main-tablet.png");
+    background-size: 30%, 100%;
   }
   .first-section .first-info {
     margin-top: 100px;
   }
   .first-section .first-info h1 {
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 3.3rem;
+    line-height: 3.3rem;
     letter-spacing: -0.73px;
   }
   .first-section .first-info .description {
     width: 80%;
-    line-height: 28px;
-    font-size: 18px;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
   }
   .middle-section .app-img {
     top: 0;
@@ -215,8 +216,8 @@ footer .social .icon:hover {
     height: fit-content;
   }
   .middle-section .subscription-container .info-container .info-description {
-    line-height: 28px;
-    font-size: 18px;
+    line-height: 1.55rem;
+    font-size: 1.05rem;
   }
   .middle-section .subscription-container .info-container .price {
     line-height: 52px;
@@ -224,35 +225,47 @@ footer .social .icon:hover {
     font-weight: bold;
   }
   footer {
-    justify-content: center;
+    justify-content: space-between;
   }
   footer .brand-detail {
     align-items: start;
     flex-direction: column;
   }
+  footer .brand-detail .social {
+    width: fit-content;
+  }
+}
+@media (max-width: 600px) {
+  .middle-section .subscription-container {
+    margin-left: 20%;
+  }
 }
 @media (max-width: 375px) {
   body {
     background-image: url("../src/assets/bg-main-mobile.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
   }
   .container {
     width: fit-content;
   }
   .first-section {
-    margin-bottom: 150px;
+    margin-bottom: 0px;
   }
   .first-section .first-info {
     margin-top: 64px;
   }
   .first-section .first-info h1 {
     max-width: 90%;
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 2.5rem;
+    line-height: 3.063rem;
   }
   .first-section .first-info p {
     max-width: 90%;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625rem;
   }
   .middle-section {
     display: flex;
@@ -260,27 +273,28 @@ footer .social .icon:hover {
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin-bottom: 50px;
     background-size: 80%;
+    margin-bottom: 300px;
   }
   .middle-section .app-img {
-    width: 30%;
-    margin-bottom: 50px;
+    height: fit-content;
+    width: 60%;
   }
   .middle-section .subscription-container {
     width: 100%;
-    padding: 10%;
+    padding: 5%;
+    margin: 250px 0 0 0;
   }
   .middle-section .subscription-container .info-container {
     width: 100%;
   }
   .middle-section .subscription-container .info-container h3 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   .middle-section .subscription-container .info-container .info-description {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     width: 100%;
   }
   .middle-section .btn-container button {
@@ -288,15 +302,16 @@ footer .social .icon:hover {
   }
   footer {
     flex-direction: column;
-    gap: 32px;
+    gap: 2rem;
     align-items: flex-start;
+    margin-top: 100px;
   }
   footer span {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
   .brand {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
